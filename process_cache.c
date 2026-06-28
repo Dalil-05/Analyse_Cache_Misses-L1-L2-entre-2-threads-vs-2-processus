@@ -1,5 +1,5 @@
 /*
- * Projet 12 - Version PROCESSUS
+
  * Chaque processus travaille sur son propre tableau local (malloc).
  * Accès aléatoires pour neutraliser le prefetcher.
  *
@@ -16,10 +16,10 @@
 #define ITERATIONS 5
 #define YIELD_FREQ 1
 
-/* ------------------------------------------------------------------ */
+
 /*  Tâche commune : identique à la version threads                    */
 /*  Chaque processus a son propre espace mémoire (séparation totale)  */
-/* ------------------------------------------------------------------ */
+
 void do_work(int proc_id) {
     int *array = (int *)malloc(ARRAY_SIZE * sizeof(int));
     if (!array) {
@@ -29,7 +29,7 @@ void do_work(int proc_id) {
 
     volatile long sum = 0;
 
-/* Écriture séquentielle → tout le tableau est rempli à coup sûr */
+/* Écriture séquentielle  */
     for (int i = 0; i < ARRAY_SIZE; i++) {
         array[i] = proc_id + i;
         int idx = rand() % ARRAY_SIZE;
@@ -44,9 +44,9 @@ void do_work(int proc_id) {
     free(array);
 }
 
-/* ------------------------------------------------------------------ */
+
 /*  Main                                                              */
-/* ------------------------------------------------------------------ */
+
 int main(void) {
     printf("=== Version PROCESSUS ===\n");
     printf("Taille tableau : %d entiers par processus\n", ARRAY_SIZE);
