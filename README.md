@@ -69,12 +69,13 @@ Ici nous nous interessont au vif du projet. On prepare les outils de monitoring 
 - Faire la mise en oeuvre
 
 ## Partie 2 - Resultat et discussion
-![alt text](<Capture d'écran 2026-06-27 121149.png>)
-![alt text](./"image analyse"/Taux_echec.png)
-![alt text](heatmap_processus.png)
-![alt text](heatmap_thread.png)
-![alt text](scaterplot_L1.png)
+![alt text](/screen_excel.png)      
+![alt text](/image%20analyse/Taux_echec.png)      
+![alt text](/image%20analyse/heatmap_processus.png)      
+![alt text](/image%20analyse/heatmap_thread.png)      
+![alt text](/image%20analyse/scaterplot_L1.png)      
+![alt text](/image%20analyse/scaterplot_L2.png)        
  Il s'agira de discuter sur les resultats obtenus ainsi que sur les constats fait.
-## Partie 3 - Conclusio
+## Partie 3 - Conclusion
 ### Objectif : 
 Faire une conclusion de l'etude. 
